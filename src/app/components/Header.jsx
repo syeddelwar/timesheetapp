@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from "react";
 import Image from "next/image";
 import logo from "../../img/logo.png";
@@ -50,6 +51,7 @@ const Header = () => {
 
               <Button
                 variant="gradient"
+                color="purple"
                 size="sm"
                 className="hidden lg:inline-block rounded-sm"
               >
@@ -108,6 +110,7 @@ const Header = () => {
             <Button
               variant="gradient"
               size="sm"
+              color="purple"
               fullWidth
               className="mb-2 mt-4"
             >

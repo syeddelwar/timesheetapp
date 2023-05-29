@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Header from "./Header";
 import { FcAlarmClock } from "react-icons/fc";
 import { GiStopwatch } from "react-icons/gi";
+import Sidebar from "./Sidebar";
 import {
   Card,
   CardBody,
@@ -19,35 +20,36 @@ export default function Index() {
 
       {/* clock  */}
       <div className="clock   container mx-auto">
+        <Sidebar />
         <Card className="  w-full ">
           <CardBody className="p-[5rem] border">
             <div className="clock__wrapper">
               {/*  name and details*/}
               <div className=" border  p-8 rounded-md ">
-                
-                
                 <div className=" grid grid-cols-1 gap-y-4 lg:grid-cols-2 items-center  justify-items-center ">
-                  {/* start time */}
                   <div className="flex justify-center  space-x-5 items-center">
                     <label
                       htmlFor="start"
-                      className="  flex items-center  space-x-3 font-bold"
+                      className="  block space-x-1 text-black font-bold"
                     >
-                      <span className="  text-black"> Name:</span>
+                      <span>Full</span>
+                      <span>Name</span>
                     </label>
+
                     <Input label="name" disabled />
                   </div>
-                  {/* end time */}
+
                   <div className="flex justify-center  space-x-5 items-center">
                     <label
                       htmlFor="start"
                       className="  flex items-center  space-x-3 font-bold"
                     >
-                      <span className="  text-black"> Name:</span>
+                      <span className="  text-black"> Email:</span>
                     </label>
                     <Input label="name" disabled />
                   </div>
                 </div>
+
                 <div className=" grid grid-cols-1 gap-y-4 lg:grid-cols-2 mt-[2rem] items-center  justify-items-center ">
                   {/* start time */}
                   <div className="flex justify-center  space-x-5 items-center">
@@ -55,7 +57,7 @@ export default function Index() {
                       htmlFor="start"
                       className="  flex items-center  space-x-3 font-bold"
                     >
-                      <span className="  text-black"> Name:</span>
+                      <span className="  text-black"> Pethent:</span>
                     </label>
                     <Input label="name" disabled />
                   </div>
@@ -65,13 +67,11 @@ export default function Index() {
                       htmlFor="start"
                       className="  flex items-center  space-x-3 font-bold"
                     >
-                      <span className="  text-black"> Name:</span>
+                      <span className="  text-black"> Employee:</span>
                     </label>
                     <Input label="name" disabled />
                   </div>
                 </div>
-
-             
               </div>
 
               {/* start and end time  */}
@@ -151,17 +151,17 @@ export default function Index() {
 
                 <div>
                   <ButtonGroup
-                    color="blue"
-                    className=" space-x-4"
+                    color="purple"
+                    className=" space-x-4  "
                     variant="gradient"
                   >
-                    <Button className=" font-bold text-[.9rem] md:text-[1rem]  rounded-md">
+                    <Button className=" bg-[#7F007F] font-bold text-[.9rem] md:text-[1rem]  rounded-md">
                       Puse
                     </Button>
-                    <Button className="  font-bold text-[.9rem] md:text-[1rem] rounded-md">
+                    <Button className=" bg-[#7F007F]  font-bold text-[.9rem] md:text-[1rem] rounded-md">
                       Switch
                     </Button>
-                    <Button className="  font-bold text-[.9rem] md:text-[1rem] rounded-md">
+                    <Button className="  bg-[#7F007F] font-bold text-[.9rem] md:text-[1rem] rounded-md">
                       Stop
                     </Button>
                   </ButtonGroup>
@@ -195,7 +195,9 @@ export default function Index() {
                   </Card>
 
                   <div>
-                    <Button className=" font-bold mt-4 ">Submit</Button>
+                    <Button color="purple" className=" font-bold mt-4 ">
+                      Submit
+                    </Button>
                   </div>
                 </div>
               </div>
