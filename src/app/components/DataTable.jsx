@@ -274,25 +274,51 @@ export default function DataTable() {
       </Card>
 
       {/* modal  */}
-      <Dialog open={open} handler={handleOpen}>
-        <DialogHeader>Its a simple dialog.</DialogHeader>
-        <DialogBody divider>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ad
-          reprehenderit omnis perspiciatis aut odit! Unde architecto
-          perspiciatis, dolorum dolorem iure quia saepe autem accusamus eum
-          praesentium magni corrupti explicabo!
+      <Dialog
+        open={open}
+        handler={handleOpen}
+        className=" min-w-[25rem] md:min-w-[30rem] md:max-w-[35rem]  py-[3rem]"
+      >
+        <DialogBody className="">
+          <h1 className=" font-bold text-center text-[1.3rem] text-purple-600">
+            Employee And Patient&apos;s Data{" "}
+          </h1>
+
+          <form className="pt-10 pb-2">
+            <div className=" grid grid-cols-1 md:grid-cols-2 justify-items-center w-full gap-y-5 ">
+              <div className="">
+                <Input label="Patient's name" />
+              </div>
+              <div className="">
+                <Input label="Employee name" />
+              </div>
+            </div>
+
+            <div className=" grid grid-cols-1 md:grid-cols-2 justify-items-center w-full gap-y-5 mt-5 ">
+              <div className="">
+                <Input type="date" label="Day & Date " />
+              </div>
+              <div className="">
+                <Input label="Mobile" />
+              </div>
+            </div>
+
+            <div className=" grid grid-cols-1 md:grid-cols-2 justify-items-center w-full gap-y-5 mt-5 ">
+              <div className="">
+                <Input label="Email " />
+              </div>
+            </div>
+          </form>
         </DialogBody>
-        <DialogFooter>
+
+        <DialogFooter className="  items-center justify-center">
           <Button
-            variant="text"
-            color="red"
+            variant="gradient"
+            className="mb-4"
+            color="purple"
             onClick={handleOpen}
-            className="mr-1"
           >
-            <span>Cancel</span>
-          </Button>
-          <Button variant="gradient" color="green" onClick={handleOpen}>
-            <span>Confirm</span>
+            <span>Submit</span>
           </Button>
         </DialogFooter>
       </Dialog>
