@@ -14,18 +14,18 @@ import {
 
 export default function Index() {
   return (
-    <section className="wraper">
+    <section className="wraper bg-[#E1F0DC]">
       {/* header */}
       <Header />
 
       {/* clock  */}
-      <div className="clock   container mx-auto">
+      <div className="clock container mx-auto bg-[#E1F0DC]">
         <Sidebar />
         <Card className="  w-full ">
-          <CardBody className="p-[5rem] border">
-            <div className="clock__wrapper">
+          <CardBody className="p-[2rem] border bg-[#E1F0DC]">
+            <div className="clock__wrapper bg-[#E1F0DC]">
               {/*  name and details*/}
-              <div className=" border  p-8 rounded-md ">
+              <div className=" border  p-2 rounded-md  ">
                 <div className=" grid grid-cols-1 gap-y-4 lg:grid-cols-2 items-center  justify-items-center ">
                   <div className="flex justify-center  space-x-5 items-center">
                     <label
@@ -55,9 +55,9 @@ export default function Index() {
                   <div className="flex justify-center  space-x-5 items-center">
                     <label
                       htmlFor="start"
-                      className="  flex items-center  space-x-3 font-bold"
+                      className="  flex items-center  space-x-2 font-bold w-full"
                     >
-                      <span className="  text-black"> Pethent:</span>
+                      <span className="  text-black"> Patient Name:</span>
                     </label>
                     <Input label="name" disabled />
                   </div>
@@ -117,7 +117,7 @@ export default function Index() {
               </div>
 
               {/* counter */}
-              <div className=" grid  grid-cols-1 items-center justify-items-center mt-12">
+              <div className=" grid  grid-cols-1 items-center justify-items-center mt-6">
                 <div className=" flex justify-center items-center space-x-5">
                   <div className="counter__circle  w-8 h-8  bg-red-600  rounded-full"></div>
                   <Chip
@@ -172,9 +172,9 @@ export default function Index() {
               <div className=" grid  grid-cols-1 lg:grid-cols-2  gap-y-10 items-center justify-items-center mt-[3rem] lg:mt-[5rem]">
                 {/* location */}
                 <div className="flex flex-col justify-center   space-x-5 items-center">
-                  <Card className=" min-w-[15rem] border min-h-[15rem]">
+                  <Card className=" min-w-[25rem] border min-h-[17rem]">
                     <CardBody>
-                      <h1 className=" text-current font-bold">locaions</h1>
+                      <h1 className="text-current font-bold">locaions</h1>
                     </CardBody>
                   </Card>
 
@@ -187,8 +187,8 @@ export default function Index() {
 
                 {/* signature */}
 
-                <div className="flex flex-col justify-center   space-x-5 items-center">
-                  <Card className=" min-w-[15rem] border min-h-[15rem]">
+                <div className="flex flex-col justify-center   space-x-4 items-center">
+                  <Card className=" min-w-[25rem] border min-h-[16rem]">
                     <CardBody>
                       <h1 className=" text-current font-bold">Signature</h1>
                     </CardBody>

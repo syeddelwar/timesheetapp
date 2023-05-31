@@ -277,7 +277,7 @@ export default function DataTable() {
       <Dialog
         open={open}
         handler={handleOpen}
-        className=" min-w-[25rem] md:min-w-[30rem] md:max-w-[35rem]  py-[3rem]"
+        className=" min-w-[28rem] md:min-w-[35rem] md:max-w-[40rem]  py-[3rem]"
       >
         <DialogBody className="">
           <h1 className=" font-bold text-center text-[1.3rem] text-purple-600">
@@ -285,26 +285,26 @@ export default function DataTable() {
           </h1>
 
           <form className="pt-10 pb-2">
-            <div className=" grid grid-cols-1 md:grid-cols-2 justify-items-center w-full gap-y-5 ">
-              <div className="">
+            <div className=" grid grid-cols-1 md:grid-cols-2 justify-items-center w-full gap-y-5 gap-x-2">
+              <div className="w-full ">
                 <Input label="Patient's name" />
               </div>
-              <div className="">
+              <div className="w-full">
                 <Input label="Employee name" />
               </div>
             </div>
 
-            <div className=" grid grid-cols-1 md:grid-cols-2 justify-items-center w-full gap-y-5 mt-5 ">
-              <div className="">
+            <div className=" grid grid-cols-1 md:grid-cols-2 justify-items-center w-full gap-y-5 mt-5 gap-x-2">
+              <div className="w-full">
                 <Input type="date" label="Day & Date " />
               </div>
-              <div className="">
+              <div className="w-full">
                 <Input label="Mobile" />
               </div>
             </div>
 
-            <div className=" grid grid-cols-1 md:grid-cols-2 justify-items-center w-full gap-y-5 mt-5 ">
-              <div className="">
+            <div className=" grid grid-cols-1 md:grid-cols-2 justify-items-center w-full gap-y-5 mt-5 gap-x-2">
+              <div className="w-full">
                 <Input label="Email " />
               </div>
             </div>
