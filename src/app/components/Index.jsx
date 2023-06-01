@@ -174,13 +174,13 @@ export default function Index() {
                 <div className="flex flex-col justify-center   space-x-5 items-center">
                   <Card className=" min-w-[25rem] border min-h-[17rem]">
                     <CardBody>
-                      <h1 className="text-current font-bold">locaions</h1>
+                      <h1 className="text-current font-bold">Pethancts Signature</h1>
                     </CardBody>
                   </Card>
 
                   <div>
                     <h1 className=" mt-4 font-bold uppercase ">
-                      Your Locations
+                    Pethancts Signature
                     </h1>
                   </div>
                 </div>
@@ -195,12 +195,43 @@ export default function Index() {
                   </Card>
 
                   <div>
-                    <Button color="purple" className=" font-bold mt-4 ">
+                    <h1 className=" mt-4 font-bold uppercase ">
+                     Employee Signature
+                    </h1>
+                  </div>
+                </div>
+              </div>
+
+              {/* location and signature */}
+              <div className=" grid  grid-cols-1  gap-y-10 items-center justify-items-center mt-[3rem] lg:mt-[3rem]">
+                {/* location */}
+                <div className="flex flex-col justify-center   space-x-5 items-center">
+                  <Card className=" min-w-[25rem] border min-h-[17rem]">
+                    <CardBody>
+                      <h1 className="text-current font-bold">locaions</h1>
+                    </CardBody>
+                  </Card>
+
+                  <div>
+                    <h1 className=" mt-4 font-bold uppercase ">
+                      Your Locations
+                    </h1>
+                  </div>
+
+                  <div>
+                    <Button color="purple" className=" font-bold mt-8 ">
                       Submit
                     </Button>
                   </div>
                 </div>
+
+                {/* signature */}
+
+
               </div>
+
+
+
             </div>
           </CardBody>
         </Card>

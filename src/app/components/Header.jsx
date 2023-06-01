@@ -53,7 +53,7 @@ const Header = () => {
                 variant="gradient"
                 color="purple"
                 size="sm"
-                className="hidden lg:inline-block rounded-sm"
+                className="hidden lg:inline-block rounded-md"
               >
                 <span>Working Hour</span>
               </Button>

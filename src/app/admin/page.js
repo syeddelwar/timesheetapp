@@ -1,6 +1,5 @@
 "use clinet";
 
-
 import React from "react";
 import DataTable from "../components/DataTable";
 import Header from "../components/Header";
